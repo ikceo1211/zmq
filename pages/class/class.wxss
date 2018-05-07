@@ -1,0 +1,113 @@
+/* pages/class/class.wxss */
+/* 定义的时间 */
+@import "../../lib/font.wxss";
+.weui-media-box__init_time{
+  color: #999;
+  font-size: 13px;
+}
+/* 内容 */
+.w-70{
+   width: 70%;
+} 
+.m-left-30{
+   margin-left: 30%;
+}
+.title{
+  margin-top: 0px;
+  font-size: 14px;
+}
+.image-left{
+  width: 5rem;
+  height: 3rem;
+  position: absolute;
+}
+.weui-panel__bd::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-left:0%;
+  background-color: #ccc;
+}
+.weui-media-box__info::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-left:0%;
+  margin-top: -10px;
+  background-color: #ccc;
+}
+/*  日历样式  */
+.calerlar{
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  line-height: 1.5rem;
+  padding-top: .5rem;
+}
+.calerlar .calerlar-item{
+  width: 20%;
+  text-align: center;
+}
+.down {
+    transform: rotate(90deg); 
+    padding-top : .5rem;
+}
+.up {
+    transform: rotate(0deg); 
+    padding-top : -.5rem;
+}
+.calerlar .calerlar-item:not(:last-child)::before{
+  content:'';
+  position: absolute;
+  width: 1px;
+  height: 3rem;
+  background-color: #ccc;
+  margin-left: 1.9rem;
+}
+.calerlar .calerlar-item .week{
+  font-size: 14px;
+  font-weight: bold;
+}
+.calerlar .calerlar-item .day {
+  font-size: 12px;
+}
+.calerlar .calerlar-item:last-child::after{
+    content: '\e6a7';
+    font-family:"iconfont" !important;
+    font-size: 2rem;
+    margin-left: -1rem;
+    position: absolute;
+    margin-top: .5rem;
+}
+
+/* 选中的日期样式 */
+.active {
+  color: #f00;
+}
+.active::after{
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 2px;
+  background-color: #f00;
+  margin-left: -1.6rem;
+  margin-top: .45rem;
+}
+/* container模板样式 */ 
+.container {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 0px;
+  height: 330px;
+}
+.show {
+  display: block
+}
+.hide {
+  display: none
+}

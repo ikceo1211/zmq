@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">{{storeName}}</view>
+      <!--  这个地方需要插入日历样式  -->
+      <view class='calerlar'>
+        <block wx:for="{{initData.YMDArr}}" wx:key="this">
+          <view class='calerlar-item {{item.active ? "active" : ""}}' bindtap='click_calerlar_item' data-list-eq = "{{index}}">
+            <view class='week'>{{item.week}}</view>
+            <view class='day'>{{item.today}}</view>
+          </view>
+        </block>
+        <view class='calerlar-item {{isShow ? "down" : "up"}}' bindtap='chooseCancelar'>
+        </view>
+      </view>
+      <view class="weui-panel__bd" wx:for="{{storeList}}">
+        <view class="weui-media-box weui-media-box_text" bindtap='lookInfo'>
+          <image class='image-left' src="{{item.storeImg}}"></image>
+          <view class="weui-media-box__title w-70 m-left-30 title">{{item.className}}</view>
+          <view class="w-70 m-left-30 title" style='font-size:12px;color:#999'>{{item.className}}</view>
+          <view class="weui-media-box__desc w-70 m-left-30" style='font-size:12px'>{{item.storeAddrss}}</view>
+          <view class="weui-media-box__info" style='padding-top:15px;padding-bottom:0px'>
+            <view class="weui-media-box__info__meta">课程时间</view>
+            <view class="weui-media-box__info__meta" style='color:#f00'>{{item.classTime}}</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra float_right">{{item.classUser}}/{{item.classAllUser}}人</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 时间选择器 -->
+<view class="container {{isShow ? 'show' : 'hide'}}">
+    <cancelar id='dialog' 
+      bind:chooseEvent="chooseEvent" 
+    > 
+    </cancelar>    
+</view>

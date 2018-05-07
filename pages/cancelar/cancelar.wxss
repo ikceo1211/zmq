@@ -1,0 +1,39 @@
+/* pages/cancelar/cancelar.wxss */
+@import "../../lib/weui.wxss";
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.flex-week {
+  background-color: #fff;
+  border-top : 2rpx solid#f00;
+  border-bottom : 2rpx solid#f00;
+}
+.flex-week .weui-flex__item view{
+  background-color: #fff;
+  color: #f00;
+}
+.flex-day .weui-flex__item .placeholder{
+  margin: 0rpx;
+  color: #fff;
+  background-color: #f00;
+  border : 1rpx solid#f00;
+}
+.day_late {
+  background-color: #fff !important;
+  border : 1rpx solid#EBEBEB !important;
+  color: #cfcfcf !important;
+}
+.day_no {
+   background-color: #EBEBEB !important;
+   border : 1rpx solid#fff !important; 
+   color: #cfcfcf !important;
+}
+.chooseDay {
+  color: #000;
+}

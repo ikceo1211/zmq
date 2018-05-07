@@ -1,0 +1,191 @@
+/* pages/main/main.wxss */
+/* 轮播  */
+@import "../../lib/font.wxss";
+
+html{
+  font-size: 16px;
+}
+page{
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+}
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swiper-box .wx-swiper-dot{
+    width:40rpx;
+    display: inline-flex;
+    height: 10rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,0.8);
+    border-radius: 8rpx
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:rgba(244,0,0,0.8);   
+}
+.slide-image {
+  width: 100%;
+  height: 150px
+}
+
+/*店铺详情*/
+.shop{
+  width: 100%;
+  padding: .5rem 0rem 0rem 1.5rem;
+  display: flex;
+  height: 3.7rem;
+  background-color: #fff;
+}
+.shop image{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 30%;
+}
+.shop label{
+  height: 1.5rem;
+  display: block;
+  line-height: 1.5rem;
+  margin-left: .5rem;
+  font-weight: bold;
+}
+.shop::after{
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: .1rem;
+  background-color: #ccc;
+  margin-top: 2.1rem;
+}
+/* 活动 */
+.activity {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #fff;
+  margin-top: .7rem;
+  font-size: .8rem;
+  line-height: 2.5rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+.activity::after{
+    content: '\e6a7';
+    font-family:"iconfont" !important;
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+}
+/*  教练  */
+.userList{
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+}
+.userList .user {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: .7rem;
+  font-size: .8rem;
+  line-height: 2.5rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+.user::after{
+    content: '\e6a7';
+    font-family:"iconfont" !important;
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+}
+/*  直线 */
+.line-x{
+  width: 90%;
+  background-color: #ccc;
+  height: .08rem;
+  margin-left: 1.4rem;
+}
+/* 教练头像 */
+.userList image{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: .5rem 0 0 1.5rem;
+}
+/*  联系我们  */
+.we{
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+}
+.we .user {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: .7rem;
+  font-size: .8rem;
+  line-height: 2.5rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+/*  直线 */
+.line-x{
+  width: 90%;
+  background-color: #ccc;
+  height: .08rem;
+  margin-left: 1.4rem;
+}
+/* 联系方式*/
+.phone {
+  width: 100%;
+  display: flex;
+  height: 5rem;
+  background-color: #fff;
+}
+.address {
+  width: 50%;
+  line-height: 1.3rem;
+  padding: .5rem 0 0 1.5rem;
+}
+.address .title{
+  font-size: .8rem;
+}
+.address .name::before{
+    content: '\e602';
+    font-family:"iconfont" !important;
+    font-size: .7rem;
+}
+.address .name{
+  font-size: .7rem;
+}
+/* 电话 */
+.tel {
+  width: 30%;
+  height: 3rem;
+  /* position: absolute; */
+  margin-top: -4.5rem;
+  margin-left: 70%;
+  border-left: 1px solid#ccc;
+}
+.tel::after{
+    content: '\e634';
+    font-family:"iconfont" !important;
+    font-size: 2rem;
+    margin-left: 1.3rem;
+    position: absolute;
+    margin-top: .5rem;
+}
+
+/* container模板样式 */ 
+.container {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 0px;
+  height: 330px;
+}

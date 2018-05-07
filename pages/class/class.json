@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cancelar": "../../compent/cancelar"
+  }
+}

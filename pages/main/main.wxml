@@ -1,0 +1,65 @@
+<!--輪播-->
+<view class='lunbo'>
+  <swiper class="swiper-box" indicator-dots="true" autoplay="true">
+    <block wx:key="this" wx:for="{{ swiperItem }}">
+      <swiper-item>
+        <navigator url="{{ item.linkUrl }}">
+          <image class="slide-image" src="{{ item.imgUrl }}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--店铺名字-->
+<block>
+  <view class='shop'>
+    <image src="{{shopLogo}}"></image>
+    <label>{{shopName}}</label>
+  </view>
+</block>
+<!--最新活动-->
+<block>
+  <view class='activity'>
+    最新活动
+  </view>
+</block>
+<!--教练-->
+<block>
+  <view class='userList'>
+    <view class='user'>
+      教练介绍
+    </view>
+    <view class='line-x'></view>
+    <view>
+      <image src="{{shopLogo}}"></image>
+    </view>
+  </view>
+</block>
+<!--联系我们-->
+<block>
+  <view class='we'>
+    <view class='user'>
+      联系我们
+    </view>
+    <view class='line-x'></view>
+    <view class='phone'>
+       <view class='address' > 
+        <label class='title'>TUNSNM BALL CLUB</label>
+        <view class='name'>金鼎花园8号楼顶上</view>
+         </view> 
+      </view>
+      <!--电话-->
+       <view class='tel'></view> 
+    </view>
+</block>
+<!-- 时间选择器 -->
+<view class="container">
+    <cancelar id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </cancelar>    
+</view>

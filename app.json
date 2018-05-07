@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/class/class",
+    "pages/main/main",
+    "pages/cancelar/cancelar",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/service/service"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "卡服务"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}
